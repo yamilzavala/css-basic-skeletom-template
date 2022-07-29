@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: arial, helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.borders-and-background {
+    border: solid 12px rgb(241, 239, 239);
+    background:rgb(162, 214, 162);
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+header {    
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+ul {
+    list-style: none;    
+}
+
+nav ul li {
+    float: left;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color:rgb(162, 214, 162)
+}
+
+a {
+    text-transform: uppercase;
+}
+
+.clear-fix {
+    float: none;
+    clear: both;
+}
+
+aside {
+    margin-top: .7%;
+    width: 20%;
+    float: left;
+    min-height: 500px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+main {
+    float: left;
+    margin-left: 15px;
+    width: 70%;
+}
+
+footer {
+    float: right;
+    margin-top: 3%;
+    width: 95%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+main .caja {
+    width: 30%; 
+    height: 100px;   
+    display: block;
+    float: right;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #888888;
+    overflow: hidden;
+}
+
+#social-media {
+    height: 30px;
+    position: fixed;
+    top: 30%;
+    opacity: 50%;
+}
+
+@media (max-width: 890px) {
+    .nav, aside, footer {
+        width: 50%;
+        float: none;
+    }
+
+    main .caja {
+        width: 70%;
+        float: none;
+        margin: 10px 0px;
+    }
+
+    header {
+        width: 50%;
+    }
+
+    .container {
+        width: 900px;
+    }
+}
